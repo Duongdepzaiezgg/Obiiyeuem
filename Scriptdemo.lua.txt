@@ -1,0 +1,247 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "Rem",
+         Animation = "Rem: Rezero"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"1234"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = " http://www.roblox.com/asset/?id=139602672211378",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm"})
+     local Tab2o = MakeTab({Name = "Script Aoto Bounty"})
+     local Tab3o = MakeTab({Name = "Script Fix Lag"})
+     local Tab4o = MakeTab({Name = "Script Hop Svever"})
+     
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Redz Hub",
+    Callback = function()
+	 local Settings = {
+    JoinTeam = "Pirates"; -- Pirates/Marines
+    Translator = true; -- true/false
+  }
+
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+  end
+  })
+  
+  AddButton(Tab2o, {
+     Name = "Lion Auto Bounty Hub",
+    Callback = function()
+	 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = "Pirates"
+getgenv().Config = {
+    ["Safe Health"] = {50},
+    ["Custom Y Run"] = {
+        Enabled = true,
+        ["Y Run"] = 5000
+    },
+    ["Hunt Method"] = {
+        ["Use Move Predict"] = true,
+        ["Hit and Run"] = true,
+        ["Aimbot"] = true,
+        ["ESP Player"] = true,
+        ["Max Attack Time"] = 60
+    },
+    ["Shop"] = {
+        ["Random Fruit"] = false,
+        ["Store Fruit"] = true,
+        ["Zoro Sword"] = false
+    },
+    ["Setting"] = {
+        ["World"] = 3,
+        ["White Screen"] = false,
+        ["Click Delay"] = 0.1,
+        ["Url"] = "Your_Webhook_Url",
+        ["Chat"] = {
+            Enabled = true,
+            Wait = 350,
+            Massage = {"Lion Hub On Top", "Get Best Script g g / lionhub"}
+        }
+    },
+    ["Skip"] = {
+        ["Avoid V4"] = false
+    },
+    ["Spam All Skill On V4"] = {
+        Enabled = true,
+        ["Weapons"] = {"Melee", "Sword", "Gun", "Blox Fruit"}
+    },
+    Items = {
+        Use = {"Melee", "Sword"},
+        Melee = {
+            Enable = true,
+            Delay = 0.6,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.3},
+                X = {Enable = true, HoldTime = 0.2},
+                C = {Enable = true, HoldTime = 0.5}
+            }
+        },
+        Sword = {
+            Enable = true,
+            Delay = 0.5,
+            Skills = {
+                Z = {Enable = true, HoldTime = 1},
+                X = {Enable = true, HoldTime = 0}
+            }
+        },
+        Gun = {
+            Enable = false,
+            Delay = 0.2,
+            Skills = {
+                Z = {Enable = false, HoldTime = 0.1},
+                X = {Enable = false, HoldTime = 0.1}
+            }
+        },
+        ["Blox Fruit"] = {
+            Enable = true,
+            Delay = 0.4,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.1},
+                X = {Enable = true, HoldTime = 0.1},
+                C = {Enable = true, HoldTime = 0.15},
+                V = {Enable = false, HoldTime = 0.2},
+                F = {Enable = true, HoldTime = 0.1}
+            }
+        }
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/10f7f97cebba24a87808c36ebd345a97.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Xeno Hub",
+    Callback = function()	  getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Xeter Hub",
+    Callback = function()	  getgenv().Version = "V2"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "HoHo Hub ( Cần key)",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  end
+  })
+  
+   AddButton(Tab2o, {
+     Name = "HoHo Hub Auto Bounty ( Cần key) ",
+    Callback = function()
+	 script_key = "put_your_key_here";
+
+_G["HoHo Hub Auto Bounty V4"] = {
+    ["Avatar"] = "rbxassetid://8598068647",
+    ["Farm Method"] = "Very slow", -- Normal or Gun (really Bad rn)
+    ["Select Team"] = "Pirate", -- Pirate/Marine
+    ["Discord Webhook"] = "",
+    ["Bypass Teleport"] = false, -- not recommend cuz the bypass success rate is low
+    ["Max Level Distance"] = 612, -- 612 is took from wiki but u can change it
+    ["Don't attack friends"] = true,
+    ["Don't attack player have cup"] = false,
+    ["Speed Tween"] = 280, -- Highly recommend 300 speed is good enough to anti security kick. maximum you can use is 350
+    ["Distance Attack Y"] = 0, -- Shark Race = 0; Another >= 6
+    ["Chat After Kill"] = {
+        ["Active"] = false, -- if u don't want script chat just make it false
+        ["List Chat"] = {"hello","gg","hi","np"},
+    },
+    ["Yourself"] = {
+        ["Invisible From Ken"] = true,
+        ["No Stun"] = true,
+    },
+    ["SafeZone"] = {Enabled = true, ["Health Left (%)"] = 30, ["Wait Until Heal (%)"] = 70},
+    ["Time Control"] = {
+        ["Max Time Target Player"] = 120,
+    },
+    ["Abilities"] = {
+        ["Auto Click"] = true,
+        ["Melee"] = {
+            Z = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            C = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+        ["Sword"] = {
+            Z = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+        ["Gun"] = {
+            Z = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+        ["Fruit"] = {
+            Z = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+            C = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+            V = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6}, -- don't forget to disable V if u r using zoan fruits
+            F = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+    },
+}
+_G.SupperFixLag = true -- eww potato device
+_G["Auto Gacha & Store Fruit"] = false -- more fruits ^^
+
+_G.loadCustomId = "fac6dbd013c78163f8061ce11b2c1330"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  end
+  })
+  
+  AddButton(Tab4o, {
+     Name = "Teddy Hub Auto Hop Sever",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDY-FREEMIUM"))()
+  end
+  })
+  
+  AddButton(Tab3o, {
+     Name = "Tubor Hub fix lag",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "W-azure Hub",
+    Callback = function()
+	 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "Matsune Hub",
+    Callback = function()
+	 getgenv().Team = "Pirates"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RealMatsune/Rolls-Rocye/refs/heads/main/Loading.lua"))()
+  end
+  })
